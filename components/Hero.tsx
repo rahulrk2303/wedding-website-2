@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
   });
 
   useEffect(() => {
-    // Target date: April 03, 2025 09:00:00 IST (UTC+5:30)
+    // Target date: April 03, 2026 09:00:00 IST (UTC+5:30)
     const targetDate = new Date("2026-04-03T09:00:00+05:30").getTime();
 
     const calculateTimeLeft = () => {
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
         >
           <div className="h-[1px] w-24 bg-white/50 mb-2"></div>
           <p className="font-sans text-lg md:text-xl font-light tracking-wide">
-            April 03, 2025 • MGM Beach Resort
+            April 03, 2026 • MGM Beach Resort
           </p>
 
           {/* Countdown Timer */}
