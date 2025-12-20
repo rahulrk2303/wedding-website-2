@@ -7,6 +7,7 @@ interface EventItem {
   time: string;
   desc: string;
   img: string;
+  venue: string; // 1. Added venue property
   date?: string;
   featured?: boolean;
 }
@@ -17,41 +18,46 @@ interface EventSection {
   items: EventItem[];
 }
 
+// 2. Updated data with venue details based on your previous messages
 const events: EventSection[] = [
   {
     category: "Pre-Wedding",
-    date: "April 02, 2025",
+    date: "April 02, 2026", // Note: Updated year to 2026 to match your other files
     items: [
       {
         title: "Engagement",
         time: "11:00 AM",
         desc: "The official ring exchange ceremony marking the beginning of our festivities.",
-        img: "https://picsum.photos/400/300?random=20"
+        img: "./assets/engagement1.png",
+        venue: "MGM Beach Resort (PH1 Lawn)"
       },
       {
         title: "Haldi",
         time: "2:00 PM",
         desc: "A colorful afternoon filled with turmeric, laughter, and joy.",
-        img: "https://picsum.photos/400/300?random=21"
+        img: "./assets/haldi1.png",
+        venue: "MGM Beach Resort (PH1 Lawn)"
       },
       {
         title: "Sangeet",
         time: "6:00 PM",
         desc: "An evening of music and dance. Get your dancing shoes ready!",
-        img: "https://picsum.photos/400/300?random=22"
+        img: "./assets/sangeet1.png",
+        venue: "MGM Beach Resort (Lighthouse Lawn)"
       }
     ]
   },
   {
     category: "The Wedding",
-    date: "April 03, 2025",
+    date: "April 03, 2026",
     items: [
       {
         title: "Muhurtham",
-        time: "Morning",
+        time: "8:45 AM",
         desc: "The sacred moment where we tie the knot surrounded by blessings.",
-        img: "https://picsum.photos/800/400?random=23",
-        featured: true
+        img: "./assets/wedding1.png",
+        featured: true,
+        venue: "MGM Beach Resort (Waterfront Lawn)"
       }
     ]
   },
@@ -60,17 +66,19 @@ const events: EventSection[] = [
     items: [
       {
         title: "Chennai Reception",
-        date: "April 04, 2025",
+        date: "April 05, 2026",
         time: "6:00 PM",
         desc: "Join us for a grand dinner reception in Chennai.",
-        img: "https://picsum.photos/400/300?random=24"
+        img: "./assets/reception_chennai.png",
+        venue: "M Convention, Vanagaram (The Grand Ballroom)"
       },
       {
         title: "Mannargudi Reception",
-        date: "April 07, 2025",
+        date: "April 08, 2026",
         time: "6:00 PM",
         desc: "Celebrating with our extended family in our hometown.",
-        img: "https://picsum.photos/400/300?random=25"
+        img: "./assets/reception_mannargudi.png",
+        venue: "PP Mahaal, Mannargudi"
       }
     ]
   }
@@ -106,21 +114,33 @@ const Events: React.FC = () => {
                      whileInView={{ opacity: 1, y: 0 }}
                      viewport={{ once: true }}
                      transition={{ delay: i * 0.1 }}
-                     className={`bg-white shadow-md hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden ${item.featured ? 'md:col-span-2 lg:col-span-3' : ''}`}
+                     className={`bg-white shadow-md hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden flex flex-col ${item.featured ? 'md:col-span-2 lg:col-span-2' : ''}`}
                    >
-                     <div className={`relative overflow-hidden ${item.featured ? 'h-80' : 'h-48'}`}>
+                     <div className={`relative overflow-hidden ${item.featured ? 'h-80 md:h-96' : 'h-64'}`}>
                         <img src={item.img} alt={item.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
-                        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-stone-800">
-                          {item.time}
+                        <div className="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase tracking-wider text-stone-800 flex items-center gap-1">
+                           <Clock className="w-3 h-3" />
+                           {item.time}
                         </div>
                      </div>
-                     <div className="p-6">
-                        {item.date && (
-                          <div className="flex items-center gap-2 text-gold-600 text-sm mb-2 font-medium">
-                            <Calendar className="w-4 h-4" />
-                            <span>{item.date}</span>
-                          </div>
-                        )}
+                     
+                     <div className="p-6 flex flex-col flex-grow">
+                        {/* Date and Venue Row */}
+                        <div className="mb-3 space-y-1">
+                            {item.date && (
+                              <div className="flex items-center gap-2 text-gold-600 text-sm font-medium">
+                                <Calendar className="w-4 h-4 flex-shrink-0" />
+                                <span>{item.date}</span>
+                              </div>
+                            )}
+                            
+                            {/* --- VENUE ADDED HERE --- */}
+                            <div className="flex items-center gap-2 text-stone-500 text-sm">
+                                <MapPin className="w-4 h-4 flex-shrink-0 text-gold-500" />
+                                <span>{item.venue}</span>
+                            </div>
+                        </div>
+
                         <h4 className="font-serif text-2xl text-stone-800 mb-2">{item.title}</h4>
                         <p className="text-stone-600 text-sm leading-relaxed">{item.desc}</p>
                      </div>

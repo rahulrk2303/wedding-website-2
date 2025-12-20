@@ -17,7 +17,7 @@ const Story: React.FC = () => {
   const heartScale = useTransform(scrollYProgress, [0.7, 1], [0, 1]);
 
   return (
-    <section id="story" className="py-20 md:py-32 bg-stone-50 overflow-hidden">
+    <section id="story" className="py-20 md:py-32 bg-stone-0 overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 md:mb-24">
           <motion.h2
@@ -42,7 +42,7 @@ const Story: React.FC = () => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 mb-8 rounded-full overflow-hidden border-4 border-white shadow-lg relative">
                <img
-                src="https://picsum.photos/400/400?random=1"
+                src="./assets/bride.jpeg"
                 alt="Sruthi"
                 className="w-full h-full object-cover"
               />
@@ -64,7 +64,7 @@ const Story: React.FC = () => {
           >
             <div className="w-64 h-64 md:w-80 md:h-80 mb-8 rounded-full overflow-hidden border-4 border-white shadow-lg">
               <img
-                src="https://picsum.photos/400/400?random=2"
+                src="./assets/groom.jpeg"
                 alt="Rahul"
                 className="w-full h-full object-cover"
               />
@@ -86,9 +86,9 @@ const Story: React.FC = () => {
                className="w-32 h-32 md:w-48 md:h-48"
              >
                 <img 
-                  src="https://api.dicebear.com/9.x/micah/svg?seed=Sruthi&hair=full&mouth=smile&baseColor=f9a606" 
+                  src="./assets/comic_bride1.png" 
                   alt="Girl" 
-                  className="w-full h-full drop-shadow-xl"
+                  // className="w-full h-full"
                 />
              </motion.div>
 
@@ -100,12 +100,12 @@ const Story: React.FC = () => {
              {/* Simple Boy */}
              <motion.div 
                style={{ x: groomX, opacity }}
-               className="w-32 h-32 md:w-48 md:h-48"
+               className="w-28 h-28 md:w-40 md:h-40"
              >
                 <img 
-                  src="https://api.dicebear.com/9.x/micah/svg?seed=Rahul&hair=fonze&mouth=smile&baseColor=8d470b" 
+                  src="./assets/comic_groom1.png" 
                   alt="Boy" 
-                  className="w-full h-full drop-shadow-xl"
+                  // className="w-full h-full"
                 />
              </motion.div>
            </div>
@@ -113,6 +113,7 @@ const Story: React.FC = () => {
            {/* Decorative track line */}
            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-stone-200 -z-0"></div>
         </div>
+        <div className="w-16 h-[2px] bg-gold-500 mx-auto mb-12"></div>
         
         {/* Joint Story */}
         <motion.div 

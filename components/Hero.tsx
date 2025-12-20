@@ -1,53 +1,71 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { motion } from 'framer-motion';
 
-const Hero: React.FC = () => {
+// --- SUB-COMPONENT: TIMER ---
+// This handles its own state, so the Hero (and background) never re-renders!
+const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    days: 0, hours: 0, minutes: 0, seconds: 0,
   });
 
   useEffect(() => {
-    // Target date: April 03, 2026 09:00:00 IST (UTC+5:30)
+    // Target: April 03, 2026 09:00:00 IST
     const targetDate = new Date("2026-04-03T09:00:00+05:30").getTime();
 
-    const calculateTimeLeft = () => {
+    const calculate = () => {
       const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
+      const diff = targetDate - now;
+      if (diff > 0) {
         setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000),
+          days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((diff % (1000 * 60)) / 1000),
         });
-      } else {
-        // Date has passed
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
-
-    // Calculate immediately
-    calculateTimeLeft();
     
-    // Update every second
-    const interval = setInterval(calculateTimeLeft, 1000);
-
+    calculate();
+    const interval = setInterval(calculate, 1000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://picsum.photos/1920/1080?grayscale&blur=2"
-          alt="Couple Background"
-          className="w-full h-full object-cover"
-        />
+    <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-6 mb-2">
+      {[
+        { label: 'Days', value: timeLeft.days },
+        { label: 'Hours', value: timeLeft.hours },
+        { label: 'Mins', value: timeLeft.minutes },
+        { label: 'Secs', value: timeLeft.seconds }
+      ].map((item, index) => (
+        <div key={index} className="flex flex-col items-center min-w-[60px]">
+          {/* Use tabular-nums to prevent jitter when numbers change width */}
+          <span className="font-serif text-3xl md:text-4xl lg:text-5xl leading-none tabular-nums">
+            {String(item.value).padStart(2, '0')}
+          </span>
+          <span className="text-[10px] md:text-xs uppercase tracking-widest text-gold-200 mt-2 font-medium">
+            {item.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+// --- MAIN COMPONENT ---
+// Wrapped in memo() just to be safe, though separating the timer usually does the trick.
+const Hero: React.FC = memo(() => {
+  return (
+    <section id="home" className="relative h-screen min-h-[600px] w-full overflow-hidden flex items-center justify-center bg-stone-900">
+      
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat grayscale blur-sm transform-gpu"
+        style={{ 
+            backgroundImage: `url('./assets/background1.jpeg')`,
+            // This ensures the image stays fixed even during bounces/scrolls
+            willChange: 'transform' 
+        }}
+      >
         <div className="absolute inset-0 bg-black/30 mix-blend-multiply" />
       </div>
 
@@ -85,24 +103,8 @@ const Hero: React.FC = () => {
             April 03, 2026 • MGM Beach Resort
           </p>
 
-          {/* Countdown Timer */}
-          <div className="flex flex-wrap justify-center gap-4 md:gap-8 mt-6 mb-2">
-            {[
-              { label: 'Days', value: timeLeft.days },
-              { label: 'Hours', value: timeLeft.hours },
-              { label: 'Mins', value: timeLeft.minutes },
-              { label: 'Secs', value: timeLeft.seconds }
-            ].map((item, index) => (
-              <div key={index} className="flex flex-col items-center min-w-[60px]">
-                <span className="font-serif text-3xl md:text-4xl lg:text-5xl leading-none">
-                  {String(item.value).padStart(2, '0')}
-                </span>
-                <span className="text-[10px] md:text-xs uppercase tracking-widest text-gold-200 mt-2 font-medium">
-                  {item.label}
-                </span>
-              </div>
-            ))}
-          </div>
+          {/* 2. INSERT ISOLATED TIMER HERE */}
+          <CountdownTimer />
 
           <a
             href="#rsvp"
@@ -124,6 +126,6 @@ const Hero: React.FC = () => {
       </motion.div>
     </section>
   );
-};
+});
 
 export default Hero;
