@@ -72,7 +72,7 @@ const events: EventSection[] = [
     items: [
       {
         title: "Chennai Reception",
-        date: "April 05, 2026",
+        date: "April 04, 2026",
         time: "7:00 PM",
         desc: "Join us for a grand dinner reception in Chennai.",
         img: receptionChennaiImg,
@@ -80,7 +80,7 @@ const events: EventSection[] = [
       },
       {
         title: "Mannargudi Reception",
-        date: "April 08, 2026",
+        date: "April 07, 2026",
         time: "7:00 PM",
         desc: "Celebrating with our extended family in our hometown.",
         img: receptionMannargudiImg,

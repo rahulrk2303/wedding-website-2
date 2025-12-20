@@ -66,7 +66,7 @@ const Hero: React.FC = memo(() => {
       </motion.div>
 
       {/* 1. TOP SECTION: Names */}
-      <div className="relative z-10 text-center pt-32 md:pt-40 px-6">
+      <div className="relative z-10 text-center pt-28 md:pt-32 px-6">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -81,7 +81,7 @@ const Hero: React.FC = memo(() => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
-          className="font-serif text-7xl md:text-9xl text-white leading-tight flex flex-wrap items-center justify-center"
+          className="font-serif text-6xl md:text-8xl text-white leading-tight flex flex-wrap items-center justify-center"
         >
           <span className="relative">Sruthi</span>
 
@@ -125,7 +125,7 @@ const Hero: React.FC = memo(() => {
       <div className="flex-grow min-h-[120px]" />
 
       {/* 3. BOTTOM SECTION: Info, Timer, RSVP */}
-      <div className="relative z-10 text-center pb-20 md:pb-22 px-6">
+      <div className="relative z-10 text-center pb-14 md:pb-18 px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -145,7 +145,7 @@ const Hero: React.FC = memo(() => {
             href="#rsvp"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative mt-12 inline-block px-14 py-4 overflow-hidden border border-white/20 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/50"
+            className="group relative mt-8 inline-block px-14 py-4 overflow-hidden border border-white/20 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/50"
           >
             <span className="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full"></span>
             <span className="relative text-[10px] md:text-xs uppercase tracking-[0.5em] font-bold text-white group-hover:text-stone-900 transition-colors duration-500">
