@@ -77,7 +77,7 @@ const Hero: React.FC = memo(() => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          <p className="font-sans text-sm md:text-lg uppercase tracking-[0.2em] mb-4 text-gold-200">
+          <p className="font-sans text-sm md:text-lg tracking-[0.2em] mb-4 text-gold-200">
             We're getting married!
           </p>
         </motion.div>
@@ -101,7 +101,7 @@ const Hero: React.FC = memo(() => {
         >
           <div className="h-[1px] w-24 bg-white/50 mb-2"></div>
           <p className="font-sans text-lg md:text-xl font-light tracking-wide">
-            April 03, 2026 • MGM Beach Resort
+            April 03, 2026
           </p>
 
           {/* 2. INSERT ISOLATED TIMER HERE */}
