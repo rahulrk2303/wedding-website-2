@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         </p>
         <div className="w-12 h-[1px] bg-stone-700 mx-auto mb-8"></div>
         <p className="text-xs text-stone-500 font-sans tracking-wide">
-          © 2025 Sruthi & Rahul. Made with love.
+          © 2026 Sruthi & Rahul. Made with love.
         </p>
       </div>
     </footer>

@@ -25,7 +25,7 @@ const locations: (LocationItem & { date: string })[] = [
     name: 'PP Mahall',
     type: 'Reception',
     date: 'April 7, 2026',
-    address: 'Mannargudi, Tamil Nadu 614001',
+    address: 'Thanjavur Road, Mannargudi, Tamil Nadu 614001',
     mapQuery: 'PP+Mahall' 
   }
 ];

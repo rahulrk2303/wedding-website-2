@@ -22,21 +22,22 @@ const Contact: React.FC = () => {
                 <Phone className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm text-stone-500 font-semibold uppercase mb-1">Phone</p>
-                <p className="text-stone-800 font-medium">+91 98765 43210</p>
+                <p className="text-sm text-stone-500 font-semibold uppercase mb-1">WhatsApp</p>
+                <a className="text-stone-800 font-medium" href="https://wa.me/19848109241">+1 9848109241 (Rahul)</a>
+                <p></p>
+                <a className="text-stone-800 font-medium" href="https://wa.me/18484829711">+1 8484829711 (Sruthi)</a>
               </div>
             </div>
 
             {/* Email */}
             <div className="flex flex-col items-center gap-4 group">
               <div className="w-16 h-16 rounded-full bg-gold-50 flex items-center justify-center text-gold-600 group-hover:bg-gold-100 transition-colors">
-                <Mail className="w-6 h-6" />
+                <Phone className="w-6 h-6" />
               </div>
               <div>
-                <p className="text-sm text-stone-500 font-semibold uppercase mb-1">Email</p>
-                <a href="mailto:wedding@sruthiandrahul.com" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
-                  wedding@sruthiandrahul.com
-                </a>
+                <p className="text-sm text-stone-500 font-semibold uppercase mb-1">Phone</p>
+                <p className="text-stone-800 font-medium">+91 9629439241 (Rahul)</p>
+                <p className="text-stone-800 font-medium">+91 9597520840 (Sruthi)</p>
               </div>
             </div>
 
@@ -47,8 +48,12 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <p className="text-sm text-stone-500 font-semibold uppercase mb-1">Social</p>
-                <a href="#" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
-                  @sruthi_rahul_wedding
+                <a href="https://www.instagram.com/sruthi_vandhana/" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
+                  @sruthi_vandhana
+                </a>
+                <p></p>
+                <a href="https://www.instagram.com/rahul.kannan.23/" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
+                  @rahul.kannan.23
                 </a>
               </div>
             </div>

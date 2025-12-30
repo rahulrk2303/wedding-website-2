@@ -62,7 +62,7 @@ const Hero: React.FC = memo(() => {
           backgroundPosition: 'center 35%' 
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/10 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/80" />
       </motion.div>
 
       {/* 1. TOP SECTION: Names */}
@@ -72,7 +72,7 @@ const Hero: React.FC = memo(() => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <span className="inline-block px-4 py-1 border-y border-white/20 text-[10px] md:text-xs uppercase tracking-[0.6em] text-amber-100/80 mb-8">
+          <span className="inline-block px-1 py-1 border-y border-white/20 text-[9px] md:text-xs uppercase tracking-[0.6em] text-amber-100/80 mb-8">
             The Wedding Celebration of
           </span>
         </motion.div>
@@ -81,7 +81,7 @@ const Hero: React.FC = memo(() => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2, delay: 0.5 }}
-          className="font-serif text-6xl md:text-8xl text-white leading-tight flex flex-wrap items-center justify-center"
+          className="font-serif text-5xl md:text-8xl text-white leading-tight flex flex-wrap items-center justify-center"
         >
           <span className="relative">Sruthi</span>
 
@@ -112,7 +112,7 @@ const Hero: React.FC = memo(() => {
                 ease: "easeInOut"
               }
             }}
-            className="block md:inline-block text-4xl md:text-7xl mx-6 my-4 md:my-0 italic font-light bg-gradient-to-b from-amber-100 via-amber-300 to-yellow-500 bg-clip-text text-transparent select-none"
+            className="block md:inline-block text-3xl md:text-7xl mx-3 my-4 md:my-0 italic font-light bg-gradient-to-b from-amber-100 via-amber-300 to-yellow-500 bg-clip-text text-transparent select-none"
           >
             &
           </motion.span>
@@ -131,12 +131,12 @@ const Hero: React.FC = memo(() => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 1.8 }}
         >
-          <div className="flex items-center justify-center gap-6 mb-4">
-            <div className="h-[1px] w-16 bg-gradient-to-r from-transparent to-white/40"></div>
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-white/40"></div>
             <p className="font-sans text-xl md:text-2xl font-extralight tracking-[0.4em] text-white">
               April 3, 2026
             </p>
-            <div className="h-[1px] w-16 bg-gradient-to-l from-transparent to-white/40"></div>
+            <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-white/40"></div>
           </div>
 
           <CountdownTimer />
@@ -156,13 +156,13 @@ const Hero: React.FC = memo(() => {
       </div>
 
       {/* Elegant Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-30">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-30">
         <motion.div 
           animate={{ height: [20, 50, 20], opacity: [0.3, 1, 0.3] }}
           transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
           className="w-[1px] bg-white"
         />
-      </div>
+      </div> */}
     </section>
   );
 });

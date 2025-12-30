@@ -7,13 +7,15 @@ import sangeetImg from '../assets/sangeet1.png';
 import weddingImg from '../assets/wedding1.png';
 import receptionChennaiImg from '../assets/reception_chennai.png';
 import receptionMannargudiImg from '../assets/reception_mannargudi.png';
+import oonjalImg from '../assets/oonjal.png';
+import pooramImg from '../assets/pooram.png';
 
 interface EventItem {
   title: string;
   time: string;
   desc: string;
   img: string;
-  venue: string; // 1. Added venue property
+  venue: string;
   date?: string;
   featured?: boolean;
 }
@@ -50,6 +52,13 @@ const events: EventSection[] = [
         desc: "An evening of music and dance. Get your dancing shoes ready!",
         img: sangeetImg,
         venue: "MGM Beach Resort (Lighthouse Lawn)"
+      },
+      {
+        title: "Pooram",
+        time: "9:30 PM",
+        desc: "A traditional celebration for the bride by family members.",
+        img: pooramImg,
+        venue: "MGM Beach Resort (Lighthouse Lawn)"
       }
     ]
   },
@@ -62,6 +71,14 @@ const events: EventSection[] = [
         time: "8:45 AM",
         desc: "The sacred moment where we tie the knot surrounded by blessings.",
         img: weddingImg,
+        featured: true,
+        venue: "MGM Beach Resort (Waterfront Lawn)"
+      },
+      {
+        title: "Oonjal",
+        time: "12:30 PM",
+        desc: "A traditional ritual symbolizing balance and harmony in our married life.",
+        img: oonjalImg,
         featured: true,
         venue: "MGM Beach Resort (Waterfront Lawn)"
       }
@@ -112,7 +129,7 @@ const Events: React.FC = () => {
                  {section.date && <p className="font-sans text-stone-500 font-medium">{section.date}</p>}
                </motion.div>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                  {section.items.map((item, i) => (
                    <motion.div
                      key={i}

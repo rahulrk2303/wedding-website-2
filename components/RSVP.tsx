@@ -22,7 +22,7 @@ const RSVP: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           // Removed internal padding (p-8) so the Google Form fills the white box completely
-          className="bg-violet-50 rounded-2xl shadow-xl overflow-hidden"
+          className="bg-blue-50 rounded-2xl shadow-xl overflow-hidden"
         >
           <div className="w-full relative">
             <iframe 
