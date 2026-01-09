@@ -54,7 +54,7 @@ const Story: React.FC = () => {
             <h3 className="font-serif text-3xl text-stone-800 mb-2">Sruthi</h3>
             <p className="font-sans text-xs uppercase tracking-widest text-gold-600 mb-6">The Bride</p>
             <p className="font-sans text-stone-600 leading-relaxed max-w-sm">
-              Sruthi is a gentle soul with a fierce heart. She brings light into every room she enters and has found her perfect counterpart in Rahul. Her journey has been one of grace, art, and finding joy in the little things.
+              Sruthi has a heart full of love and a smile that lights up every space she enters. She finds joy in little things, believes in meaningful connections, and gives her all to the people she cares about.
             </p>
           </motion.div>
 

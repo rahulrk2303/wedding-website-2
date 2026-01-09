@@ -99,6 +99,26 @@ const Gallery: React.FC = () => {
             onDragEnd={handleDragEnd}
             style={{ cursor: 'grab' }}
           />
+          {/* Prev / Next buttons for mobile */}
+          {images.length > 0 && (
+            <>
+              <button
+                aria-label="Previous"
+                onClick={() => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)}
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 z-40 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-stone-800"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+
+              <button
+                aria-label="Next"
+                onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 z-40 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-stone-800"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </>
+          )}
           <div className="relative w-full h-full flex items-center justify-center">
              {images.map((img, index) => (
                 <motion.div
