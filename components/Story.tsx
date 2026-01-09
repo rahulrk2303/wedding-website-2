@@ -54,7 +54,7 @@ const Story: React.FC = () => {
             <h3 className="font-serif text-3xl text-stone-800 mb-2">Sruthi</h3>
             <p className="font-sans text-xs uppercase tracking-widest text-gold-600 mb-6">The Bride</p>
             <p className="font-sans text-stone-600 leading-relaxed max-w-sm">
-              Sruthi has a heart full of love and a smile that lights up every space she enters. She finds joy in little things, believes in meaningful connections, and gives her all to the people she cares about.
+              Sruthi (Ammu) has a heart full of love and a smile that lights up every space she enters. She finds joy in little things, believes in meaningful connections, and gives her all to the people she cares about.
             </p>
           </motion.div>
 
@@ -76,7 +76,7 @@ const Story: React.FC = () => {
             <h3 className="font-serif text-3xl text-stone-800 mb-2">Rahul</h3>
             <p className="font-sans text-xs uppercase tracking-widest text-gold-600 mb-6">The Groom</p>
             <p className="font-sans text-stone-600 leading-relaxed max-w-sm">
-              Rahul is the calm to Sruthi's storm, a pillar of strength and kindness. He loves deeply and laughs freely. Meeting Sruthi was the beginning of his greatest adventure, and he can't wait to start this new chapter.
+              Rahul (RK) is the calm to Sruthi's storm, a pillar of strength and kindness. He loves deeply and laughs freely. Meeting Sruthi was the beginning of his greatest adventure, and he can't wait to start this new chapter.
             </p>
           </motion.div>
         </div>
