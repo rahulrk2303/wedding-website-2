@@ -5,7 +5,7 @@ import { LocationItem } from '../types';
 
 const locations: (LocationItem & { date: string })[] = [
   {
-    id: 'l1',
+    id: 'loc-mgm',
     name: 'MGM Beach Resort',
     type: 'Wedding',
     date: 'April 2 - 3, 2026',
@@ -13,7 +13,7 @@ const locations: (LocationItem & { date: string })[] = [
     mapQuery: 'MGM+Beach+Resort'
   },
   {
-    id: 'l2',
+    id: 'loc-mconventions',
     name: 'M Weddings & Conventions',
     type: 'Reception',
     date: 'April 4, 2026',
@@ -21,7 +21,7 @@ const locations: (LocationItem & { date: string })[] = [
     mapQuery: 'M+Weddings+Conventions'
   },
   {
-    id: 'l3',
+    id: 'loc-ppmahall',
     name: 'PP Mahall',
     type: 'Reception',
     date: 'April 7, 2026',
@@ -43,6 +43,7 @@ const Locations: React.FC = () => {
           {locations.map((loc, idx) => (
             <motion.div
               key={loc.id}
+              id={loc.id}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

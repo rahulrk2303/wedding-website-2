@@ -18,6 +18,7 @@ interface EventItem {
   venue: string;
   date?: string;
   featured?: boolean;
+  locId?: string;
 }
 
 interface EventSection {
@@ -37,28 +38,32 @@ const events: EventSection[] = [
         time: "11:00 AM",
         desc: "The official ring exchange ceremony marking the beginning of our festivities.",
         img: engagementImg,
-        venue: "MGM Beach Resort (PH1 Lawn)"
+        venue: "MGM Beach Resort (PH1 Lawn)",
+        locId: "loc-mgm"
       },
       {
         title: "Haldi",
         time: "2:00 PM",
         desc: "A colorful afternoon filled with turmeric, laughter, and joy.",
         img: haldiImg,
-        venue: "MGM Beach Resort (PH1 Lawn)"
+        venue: "MGM Beach Resort (PH1 Lawn)",
+        locId: "loc-mgm"
       },
       {
         title: "Sangeet",
         time: "6:30 PM",
         desc: "An evening of music and dance. Get your dancing shoes ready!",
         img: sangeetImg,
-        venue: "MGM Beach Resort (Lighthouse Lawn)"
+        venue: "MGM Beach Resort (Lighthouse Lawn)",
+        locId: "loc-mgm"
       },
       {
         title: "Pooram",
         time: "9:30 PM",
         desc: "A traditional celebration for the bride by family members.",
         img: pooramImg,
-        venue: "MGM Beach Resort (Lighthouse Lawn)"
+        venue: "MGM Beach Resort (Lighthouse Lawn)",
+        locId: "loc-mgm"
       }
     ]
   },
@@ -72,7 +77,8 @@ const events: EventSection[] = [
         desc: "The sacred moment where we tie the knot surrounded by blessings.",
         img: weddingImg,
         featured: true,
-        venue: "MGM Beach Resort (Waterfront Lawn)"
+        venue: "MGM Beach Resort (Waterfront Lawn)",
+        locId: "loc-mgm"
       },
       {
         title: "Oonjal",
@@ -80,7 +86,8 @@ const events: EventSection[] = [
         desc: "A traditional ritual symbolizing balance and harmony in our married life.",
         img: oonjalImg,
         featured: true,
-        venue: "MGM Beach Resort (Waterfront Lawn)"
+        venue: "MGM Beach Resort (Waterfront Lawn)",
+        locId: "loc-mgm"
       }
     ]
   },
@@ -93,7 +100,8 @@ const events: EventSection[] = [
         time: "7:00 PM",
         desc: "Join us for a grand dinner reception in Chennai.",
         img: receptionChennaiImg,
-        venue: "M Weddings & Conventions, Vanagaram (The Grand Ballroom)"
+        venue: "M Weddings & Conventions, Vanagaram (The Grand Ballroom)",
+        locId: "loc-mconventions"
       },
       {
         title: "Mannargudi Reception",
@@ -101,7 +109,8 @@ const events: EventSection[] = [
         time: "7:00 PM",
         desc: "Celebrating with our extended family in our hometown.",
         img: receptionMannargudiImg,
-        venue: "PP Mahall, Mannargudi"
+        venue: "PP Mahall, Mannargudi",
+        locId: "loc-ppmahall"
       }
     ]
   }
@@ -160,7 +169,7 @@ const Events: React.FC = () => {
                             {/* --- VENUE ADDED HERE --- */}
                             <div className="flex items-center gap-2 text-stone-500 text-sm">
                                 <MapPin className="w-4 h-4 flex-shrink-0 text-gold-500" />
-                                <span><a href="#locations">{item.venue}</a></span>
+                                <span><a href={`#${item.locId}`}>{item.venue}</a></span>
                             </div>
                         </div>
 
