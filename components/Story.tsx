@@ -51,7 +51,7 @@ const Story: React.FC = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="font-serif text-3xl text-stone-800 mb-2">Sruthi</h3>
+            <h3 className="font-serif text-3xl text-stone-800 mb-2">Sruthi Vandhana</h3>
             <p className="font-sans text-xs uppercase tracking-widest text-gold-600 mb-6">The Bride</p>
             <p className="font-sans text-stone-600 leading-relaxed max-w-sm">
               Sruthi (Ammu) has a heart full of love and a smile that lights up every space she enters. She finds joy in little things, believes in meaningful connections, and gives her all to the people she cares about.
