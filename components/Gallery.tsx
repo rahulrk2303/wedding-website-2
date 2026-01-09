@@ -1,25 +1,53 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-// Load all images from the folder
-const imageModules = import.meta.glob('../assets/gallery/*.{png,jpg,jpeg,svg}', {
-    eager: true,
-    import: 'default',
-})
-
-const images = Object.values(imageModules) as string[]
+type OptimizedImage = {
+  id: string;
+  fallback: string;
+  jpgSrcSet: string;
+  sizes: string;
+};
 
 const Gallery: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [images, setImages] = useState<OptimizedImage[]>([]);
+
+  // Load optimized manifest from public/optimized-gallery/manifest.json
+  useEffect(() => {
+    let mounted = true;
+    fetch('/optimized-gallery/manifest.json')
+      .then((r) => r.ok ? r.json() : Promise.reject('no manifest'))
+      .then((data: OptimizedImage[]) => {
+        if (mounted && Array.isArray(data)) {
+          // Shuffle images to randomize gallery order on each load
+          const shuffle = <T,>(arr: T[]) => {
+            const a = arr.slice();
+            for (let i = a.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+          };
+          setImages(shuffle(data));
+          setCurrentIndex(0);
+        }
+      })
+      .catch(() => {
+        // If manifest missing, keep images empty (fallback could be implemented)
+        console.warn('optimized-gallery manifest not found; run `npm run optimize-images`');
+      });
+
+    return () => { mounted = false };
+  }, []);
 
   // Auto-scroll effect
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 3000); 
+      setCurrentIndex((prev) => (images.length ? (prev + 1) % images.length : 0));
+    }, 3000);
 
     return () => clearInterval(timer);
-  }, [currentIndex]); 
+  }, [images.length, currentIndex]);
 
   const handleDragEnd = (event: any, info: any) => {
     const swipeThreshold = 50;
@@ -71,8 +99,28 @@ const Gallery: React.FC = () => {
             onDragEnd={handleDragEnd}
             style={{ cursor: 'grab' }}
           />
+          {/* Prev / Next buttons for mobile */}
+          {images.length > 0 && (
+            <>
+              <button
+                aria-label="Previous"
+                onClick={() => setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)}
+                className="absolute left-3 top-1/2 transform -translate-y-1/2 z-40 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-stone-800"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+
+              <button
+                aria-label="Next"
+                onClick={() => setCurrentIndex((prev) => (prev + 1) % images.length)}
+                className="absolute right-3 top-1/2 transform -translate-y-1/2 z-40 w-10 h-10 rounded-full bg-white/90 shadow flex items-center justify-center"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-stone-800"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </>
+          )}
           <div className="relative w-full h-full flex items-center justify-center">
-             {images.map((src, index) => (
+             {images.map((img, index) => (
                 <motion.div
                   key={index}
                   className="absolute w-64 h-80 rounded-xl overflow-hidden shadow-2xl border-4 border-white"
@@ -81,7 +129,16 @@ const Gallery: React.FC = () => {
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   style={{ transformOrigin: "center" }}
                 >
-                  <img src={src} alt={`Gallery ${index + 1}`} className="w-full h-full object-cover" draggable={false} />
+                  <img
+                    src={img.fallback}
+                    srcSet={img.jpgSrcSet}
+                    sizes={img.sizes}
+                    alt={`Gallery ${index + 1}`}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    draggable={false}
+                  />
                 </motion.div>
              ))}
           </div>
@@ -95,7 +152,7 @@ const Gallery: React.FC = () => {
 {/* --- DESKTOP MASONRY VIEW --- */}
         {/* Changed to 4 columns on medium screens, 6 on large screens */}
         <div className="hidden md:block columns-4 lg:columns-6 gap-4 space-y-4">
-          {images.map((src, index) => (
+          {images.map((img, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
@@ -105,9 +162,13 @@ const Gallery: React.FC = () => {
               className="break-inside-avoid mb-4 overflow-hidden rounded-lg group cursor-pointer relative"
             >
               <img
-                src={src}
+                src={img.fallback}
+                srcSet={img.jpgSrcSet}
+                sizes={img.sizes}
                 alt={`Gallery ${index + 1}`}
                 className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 pointer-events-none"></div>
             </motion.div>

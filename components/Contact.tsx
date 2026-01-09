@@ -48,6 +48,10 @@ const Contact: React.FC = () => {
               </div>
               <div>
                 <p className="text-sm text-stone-500 font-semibold uppercase mb-1">Social</p>
+                 <a href="https://www.instagram.com/the.srk.story" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
+                  @the.srk.story
+                </a>
+                <p></p>
                 <a href="https://www.instagram.com/sruthi_vandhana/" className="text-stone-800 font-medium hover:text-gold-600 transition-colors">
                   @sruthi_vandhana
                 </a>

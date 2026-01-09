@@ -1,0 +1,284 @@
+[
+  {
+    "id": "073f1b0e-845e-4c56-b4e2-edd273fdc3ce.jpg",
+    "fallback": "/optimized-gallery/073f1b0e-845e-4c56-b4e2-edd273fdc3ce-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/073f1b0e-845e-4c56-b4e2-edd273fdc3ce-800.jpg 800w, /optimized-gallery/073f1b0e-845e-4c56-b4e2-edd273fdc3ce-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (1).jpg",
+    "fallback": "/optimized-gallery/2 (1)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (1)-800.jpg 800w, /optimized-gallery/2 (1)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (12).jpg",
+    "fallback": "/optimized-gallery/2 (12)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (12)-800.jpg 800w, /optimized-gallery/2 (12)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (18).jpg",
+    "fallback": "/optimized-gallery/2 (18)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (18)-800.jpg 800w, /optimized-gallery/2 (18)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (23).jpg",
+    "fallback": "/optimized-gallery/2 (23)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (23)-800.jpg 800w, /optimized-gallery/2 (23)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (27).jpg",
+    "fallback": "/optimized-gallery/2 (27)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (27)-800.jpg 800w, /optimized-gallery/2 (27)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "2 (31).jpg",
+    "fallback": "/optimized-gallery/2 (31)-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/2 (31)-800.jpg 800w, /optimized-gallery/2 (31)-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "322A8535.jpg",
+    "fallback": "/optimized-gallery/322A8535-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/322A8535-800.jpg 800w, /optimized-gallery/322A8535-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "37724AD4-7E35-4051-A119-26F07E5D8377.jpg",
+    "fallback": "/optimized-gallery/37724AD4-7E35-4051-A119-26F07E5D8377-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/37724AD4-7E35-4051-A119-26F07E5D8377-800.jpg 800w, /optimized-gallery/37724AD4-7E35-4051-A119-26F07E5D8377-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "623ffaa2-f9ae-4455-a123-c5c779c992d0.jpg",
+    "fallback": "/optimized-gallery/623ffaa2-f9ae-4455-a123-c5c779c992d0-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/623ffaa2-f9ae-4455-a123-c5c779c992d0-800.jpg 800w, /optimized-gallery/623ffaa2-f9ae-4455-a123-c5c779c992d0-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "8a3cfc18-d0e1-404f-89d7-ca1ad3624550.jpg",
+    "fallback": "/optimized-gallery/8a3cfc18-d0e1-404f-89d7-ca1ad3624550-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/8a3cfc18-d0e1-404f-89d7-ca1ad3624550-800.jpg 800w, /optimized-gallery/8a3cfc18-d0e1-404f-89d7-ca1ad3624550-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "AB5FCEBE-89CA-4133-A875-1C48709405CF.jpg",
+    "fallback": "/optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-800.jpg 800w, /optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "FE9F71D8-2A4A-461E-BC46-952BC86F4B7D.jpg",
+    "fallback": "/optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-800.jpg 800w, /optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "FFDFB634-4103-4333-BC69-CF3904453497.jpg",
+    "fallback": "/optimized-gallery/FFDFB634-4103-4333-BC69-CF3904453497-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/FFDFB634-4103-4333-BC69-CF3904453497-800.jpg 800w, /optimized-gallery/FFDFB634-4103-4333-BC69-CF3904453497-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_0576.jpg",
+    "fallback": "/optimized-gallery/IMG_0576-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_0576-800.jpg 800w, /optimized-gallery/IMG_0576-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_0793.jpg",
+    "fallback": "/optimized-gallery/IMG_0793-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_0793-800.jpg 800w, /optimized-gallery/IMG_0793-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_0843.jpg",
+    "fallback": "/optimized-gallery/IMG_0843-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_0843-800.jpg 800w, /optimized-gallery/IMG_0843-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_0879.jpeg",
+    "fallback": "/optimized-gallery/IMG_0879-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_0879-800.jpg 800w, /optimized-gallery/IMG_0879-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_1378.jpeg",
+    "fallback": "/optimized-gallery/IMG_1378-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_1378-800.jpg 800w, /optimized-gallery/IMG_1378-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_2665.jpeg",
+    "fallback": "/optimized-gallery/IMG_2665-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_2665-800.jpg 800w, /optimized-gallery/IMG_2665-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3058.jpeg",
+    "fallback": "/optimized-gallery/IMG_3058-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3058-800.jpg 800w, /optimized-gallery/IMG_3058-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3157.jpeg",
+    "fallback": "/optimized-gallery/IMG_3157-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3157-800.jpg 800w, /optimized-gallery/IMG_3157-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3280.jpeg",
+    "fallback": "/optimized-gallery/IMG_3280-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3280-800.jpg 800w, /optimized-gallery/IMG_3280-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3321.jpeg",
+    "fallback": "/optimized-gallery/IMG_3321-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3321-800.jpg 800w, /optimized-gallery/IMG_3321-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3533.jpeg",
+    "fallback": "/optimized-gallery/IMG_3533-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3533-800.jpg 800w, /optimized-gallery/IMG_3533-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_3620.jpeg",
+    "fallback": "/optimized-gallery/IMG_3620-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_3620-800.jpg 800w, /optimized-gallery/IMG_3620-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_4518.jpeg",
+    "fallback": "/optimized-gallery/IMG_4518-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_4518-800.jpg 800w, /optimized-gallery/IMG_4518-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_4533.jpeg",
+    "fallback": "/optimized-gallery/IMG_4533-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_4533-800.jpg 800w, /optimized-gallery/IMG_4533-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_5270.jpeg",
+    "fallback": "/optimized-gallery/IMG_5270-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_5270-800.jpg 800w, /optimized-gallery/IMG_5270-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_5542.jpg",
+    "fallback": "/optimized-gallery/IMG_5542-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_5542-800.jpg 800w, /optimized-gallery/IMG_5542-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_5626.jpeg",
+    "fallback": "/optimized-gallery/IMG_5626-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_5626-800.jpg 800w, /optimized-gallery/IMG_5626-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_5736.jpeg",
+    "fallback": "/optimized-gallery/IMG_5736-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_5736-800.jpg 800w, /optimized-gallery/IMG_5736-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_6443.jpeg",
+    "fallback": "/optimized-gallery/IMG_6443-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_6443-800.jpg 800w, /optimized-gallery/IMG_6443-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_6445.jpeg",
+    "fallback": "/optimized-gallery/IMG_6445-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_6445-800.jpg 800w, /optimized-gallery/IMG_6445-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_6616.jpeg",
+    "fallback": "/optimized-gallery/IMG_6616-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_6616-800.jpg 800w, /optimized-gallery/IMG_6616-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_6639.jpeg",
+    "fallback": "/optimized-gallery/IMG_6639-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_6639-800.jpg 800w, /optimized-gallery/IMG_6639-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_6679.jpeg",
+    "fallback": "/optimized-gallery/IMG_6679-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_6679-800.jpg 800w, /optimized-gallery/IMG_6679-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_7175.jpeg",
+    "fallback": "/optimized-gallery/IMG_7175-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_7175-800.jpg 800w, /optimized-gallery/IMG_7175-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_7251.jpeg",
+    "fallback": "/optimized-gallery/IMG_7251-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_7251-800.jpg 800w, /optimized-gallery/IMG_7251-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_7386.jpeg",
+    "fallback": "/optimized-gallery/IMG_7386-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_7386-800.jpg 800w, /optimized-gallery/IMG_7386-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_7570.jpeg",
+    "fallback": "/optimized-gallery/IMG_7570-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_7570-800.jpg 800w, /optimized-gallery/IMG_7570-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_7576.jpeg",
+    "fallback": "/optimized-gallery/IMG_7576-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_7576-800.jpg 800w, /optimized-gallery/IMG_7576-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_8716.jpeg",
+    "fallback": "/optimized-gallery/IMG_8716-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_8716-800.jpg 800w, /optimized-gallery/IMG_8716-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_9057.jpeg",
+    "fallback": "/optimized-gallery/IMG_9057-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_9057-800.jpg 800w, /optimized-gallery/IMG_9057-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "IMG_9680.jpeg",
+    "fallback": "/optimized-gallery/IMG_9680-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/IMG_9680-800.jpg 800w, /optimized-gallery/IMG_9680-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "cdb2e08d-42f3-4a57-995e-7e0688684028.jpg",
+    "fallback": "/optimized-gallery/cdb2e08d-42f3-4a57-995e-7e0688684028-1200.jpg",
+    "jpgSrcSet": "/optimized-gallery/cdb2e08d-42f3-4a57-995e-7e0688684028-800.jpg 800w, /optimized-gallery/cdb2e08d-42f3-4a57-995e-7e0688684028-1200.jpg 1200w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  },
+  {
+    "id": "e23521bd-cd9f-456b-8f51-0701ec4bb194.jpg",
+    "fallback": "/optimized-gallery/e23521bd-cd9f-456b-8f51-0701ec4bb194-800.jpg",
+    "jpgSrcSet": "/optimized-gallery/e23521bd-cd9f-456b-8f51-0701ec4bb194-800.jpg 800w",
+    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
+  }
+]
