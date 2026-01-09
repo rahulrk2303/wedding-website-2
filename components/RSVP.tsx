@@ -14,7 +14,7 @@ const RSVP: React.FC = () => {
         <div className="text-center mb-12">
            <p className="font-sans text-gold-600 tracking-widest uppercase text-sm mb-2">Join Us</p>
            <h2 className="font-serif text-4xl md:text-5xl text-stone-800">RSVP</h2>
-           <p className="mt-4 text-stone-600">Please respond by March 15, 2025</p>
+           <p className="mt-4 text-stone-600">Please respond by March 2, 2026</p>
         </div>
 
         <motion.div

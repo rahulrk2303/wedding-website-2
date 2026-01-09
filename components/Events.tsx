@@ -160,7 +160,7 @@ const Events: React.FC = () => {
                             {/* --- VENUE ADDED HERE --- */}
                             <div className="flex items-center gap-2 text-stone-500 text-sm">
                                 <MapPin className="w-4 h-4 flex-shrink-0 text-gold-500" />
-                                <span>{item.venue}</span>
+                                <span><a href="#locations">{item.venue}</a></span>
                             </div>
                         </div>
 
