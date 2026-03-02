@@ -13,6 +13,8 @@ const Footer: React.FC = () => {
         <p className="font-sans text-stone-400 text-sm mb-8">
           We can't wait to celebrate our special day with you!
         </p>
+        {/* logo in footer */}
+        <img src="/logo.png" alt="S & R logo" className="h-20 w-auto mx-auto mb-6" />
         <div className="w-12 h-[1px] bg-stone-700 mx-auto mb-8"></div>
         <p className="text-xs text-stone-500 font-sans tracking-wide">
           © 2026 Sruthi & Rahul. Made with love.

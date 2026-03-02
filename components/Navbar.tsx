@@ -31,8 +31,8 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className={`font-serif text-2xl tracking-widest flex items-center gap-2 ${scrolled ? 'text-stone-800' : 'text-stone-800 md:text-white'}`}>
-          <Heart className={`w-5 h-5 ${scrolled ? 'text-gold-500' : 'text-gold-500 md:text-white'}`} fill="currentColor" />
-          <span>S & R</span>
+          {/* logo from public folder */}
+          <img src="/logo.png" alt="S and R logo" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Menu */}
