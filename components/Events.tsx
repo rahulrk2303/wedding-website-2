@@ -44,7 +44,7 @@ const events: EventSection[] = [
       {
         title: "Haldi",
         time: "2:30 PM",
-        desc: "A colorful afternoon filled with turmeric, laughter, and joy.",
+        desc: "A colorful afternoon filled with turmeric, laughter, and joy. Guests are encouraged to wear yellow or white attire for this ceremony.",
         img: haldiImg,
         venue: "MGM Beach Resort (PH1 Lawn)",
         locId: "loc-mgm"
