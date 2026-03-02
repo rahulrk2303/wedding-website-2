@@ -140,18 +140,32 @@ const Hero: React.FC = memo(() => {
           </div>
 
           <CountdownTimer />
+          {/* Button group: event details + RSVP in same row */}
+          <div className="flex flex-row items-center gap-6 mt-6 justify-center">
+            <motion.a
+              href="#events"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative inline-block px-6 py-3 md:px-14 md:py-4 overflow-hidden border border-white/20 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/50"
+            >
+              <span className="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full"></span>
+              <span className="relative text-[8px] md:text-[10px] uppercase tracking-[0.5em] font-bold text-white group-hover:text-stone-900 transition-colors duration-500">
+                Event Details
+              </span>
+            </motion.a>
 
-          <motion.a
-            href="#rsvp"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="group relative mt-8 inline-block px-14 py-4 overflow-hidden border border-white/20 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/50"
-          >
-            <span className="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full"></span>
-            <span className="relative text-[10px] md:text-xs uppercase tracking-[0.5em] font-bold text-white group-hover:text-stone-900 transition-colors duration-500">
-              Kindly RSVP
-            </span>
-          </motion.a>
+            <motion.a
+              href="#rsvp"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative inline-block px-6 py-3 md:px-14 md:py-4 overflow-hidden border border-white/20 backdrop-blur-sm transition-all duration-500 hover:border-amber-200/50"
+            >
+              <span className="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full"></span>
+              <span className="relative text-[8px] md:text-[10px] uppercase tracking-[0.5em] font-bold text-white group-hover:text-stone-900 transition-colors duration-500">
+                Kindly RSVP
+              </span>
+            </motion.a>
+          </div>
         </motion.div>
       </div>
 

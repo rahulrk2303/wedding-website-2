@@ -24,12 +24,6 @@
     "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
   },
   {
-    "id": "2 (23).jpg",
-    "fallback": "/optimized-gallery/2 (23)-1200.jpg",
-    "jpgSrcSet": "/optimized-gallery/2 (23)-800.jpg 800w, /optimized-gallery/2 (23)-1200.jpg 1200w",
-    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
-  },
-  {
     "id": "2 (27).jpg",
     "fallback": "/optimized-gallery/2 (27)-1200.jpg",
     "jpgSrcSet": "/optimized-gallery/2 (27)-800.jpg 800w, /optimized-gallery/2 (27)-1200.jpg 1200w",
@@ -69,12 +63,6 @@
     "id": "AB5FCEBE-89CA-4133-A875-1C48709405CF.jpg",
     "fallback": "/optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-1200.jpg",
     "jpgSrcSet": "/optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-800.jpg 800w, /optimized-gallery/AB5FCEBE-89CA-4133-A875-1C48709405CF-1200.jpg 1200w",
-    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
-  },
-  {
-    "id": "FE9F71D8-2A4A-461E-BC46-952BC86F4B7D.jpg",
-    "fallback": "/optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-1200.jpg",
-    "jpgSrcSet": "/optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-800.jpg 800w, /optimized-gallery/FE9F71D8-2A4A-461E-BC46-952BC86F4B7D-1200.jpg 1200w",
     "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
   },
   {
@@ -129,12 +117,6 @@
     "id": "IMG_3157.jpeg",
     "fallback": "/optimized-gallery/IMG_3157-1200.jpg",
     "jpgSrcSet": "/optimized-gallery/IMG_3157-800.jpg 800w, /optimized-gallery/IMG_3157-1200.jpg 1200w",
-    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
-  },
-  {
-    "id": "IMG_3280.jpeg",
-    "fallback": "/optimized-gallery/IMG_3280-1200.jpg",
-    "jpgSrcSet": "/optimized-gallery/IMG_3280-800.jpg 800w, /optimized-gallery/IMG_3280-1200.jpg 1200w",
     "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
   },
   {
@@ -225,12 +207,6 @@
     "id": "IMG_7175.jpeg",
     "fallback": "/optimized-gallery/IMG_7175-1200.jpg",
     "jpgSrcSet": "/optimized-gallery/IMG_7175-800.jpg 800w, /optimized-gallery/IMG_7175-1200.jpg 1200w",
-    "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
-  },
-  {
-    "id": "IMG_7251.jpeg",
-    "fallback": "/optimized-gallery/IMG_7251-1200.jpg",
-    "jpgSrcSet": "/optimized-gallery/IMG_7251-800.jpg 800w, /optimized-gallery/IMG_7251-1200.jpg 1200w",
     "sizes": "(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 25vw"
   },
   {
