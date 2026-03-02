@@ -49,7 +49,7 @@ const CountdownTimer = () => {
 
 const Hero: React.FC = memo(() => {
   return (
-    <section id="home" className="relative h-screen min-h-[700px] w-full overflow-hidden flex flex-col justify-between bg-stone-950">
+    <section id="home" className="relative h-screen min-h-screen w-full overflow-hidden flex flex-col justify-between bg-stone-950">
       
       {/* Cinematic Background */}
       <motion.div 
@@ -122,7 +122,7 @@ const Hero: React.FC = memo(() => {
       </div>
 
       {/* 2. MIDDLE SECTION: Clear gap for faces */}
-      <div className="flex-grow min-h-[120px]" />
+      <div className="flex-grow min-h-[150px]" />
 
       {/* 3. BOTTOM SECTION: Info, Timer, RSVP */}
       <div className="relative z-10 text-center pb-14 md:pb-18 px-6">
